@@ -4,20 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ishara Abeykoon - Blog</title>
-    <link rel="icon" sizes="192x192" href="images/IU_transparent.png" />
+    <!-- <link rel="icon" sizes="192x192" href="images/IU_transparent.png" /> -->
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link href="./main.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <script src="./script.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="nav-container">
+        <div class="nav-right">
+            <h3>Ishara Abeykoon</h1>
+        </div>
       <div class="nav-left">
-        <img src="images/IU_new.png" alt="blog logo" class="logo" />
+        <!-- <img src="images/IU_new.png" alt="blog logo" class="logo" /> -->
+        
         <a class="nav-left-margin" href="./index.html">Home</a>
-        <a class="nav-left-margin" href="./portfolio.html">Portfolio</a>
-        <a class="nav-left-margin" href="./contact.html">Contact</a>
+        <a class="nav-center-margin" href="./portfolio.html">Portfolio</a>
+        <a class="nav-right-margin" href="./contact.html">Contact</a>
           </div>
         </div>
       </div>
@@ -27,14 +35,36 @@
         <div class="grid-container">
             <div class="grid-child purple">
                 <div class="section nav-left-margin">
-                    <h1>Hi I am Ishara</h1>
+                    <br/>
+                    <h1>Hi, <br/> I am Ishara</h1>
+                    <br/>
                     <h3>I Make <div class="subhead-title">Scalable, Secure and Maintainable</div> Software</h3>
                 </div>
+                <br/>
+                <div class="description-block">
+                    <h5>
+                    Hi, I am Ishara a Backend Engineer working in tech related 
+                    to Machine Learning, Blockchain and computer security</h5></div>
             </div>
+           
             <div class="grid-child green">
-            <div class="center">
-                <img width="400" src="images/developer.jpeg">
+            <!-- <div class="center">
+                <img width="400" src="images/developer.jpeg" alt="Avatar">
+            </div> -->
+           
+            <div id="social-icons">
+                <div id="social-icons-head">
+                    <h3>Find me in:</h3>
+                </div>
+                
+                <ul>
+                    <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/iamishara/">Facebook</a></li>
+                    <li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/arcslash">Github</a></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/Isharaux">Twitter</a></li>
+                </ul>
             </div>
+            
+            
             <table width="100%" border="1" cellspacing="0" cellpadding="10">
                 <thead>
                   
@@ -63,13 +93,21 @@
                         <td>1+ Years</td>
                         <td>Kotlin, Swift, Flutter</td>
                     </tr>
-                 </tbody>
-                
+                 </tbody> 
               </table>        
             </div>
 
        
     </div>
-    <footer>&copy; Copyright 2021 Ishara Abeykoon Blog</footer>
+    <br/>
+    
+    <footer>
+        <div class="footer-content">
+            <!--add all information -->
+            &copy; Copyright 2021 Ishara Abeykoon Blog
+        </div>
+       
+    
+    </footer>
     </body>
     </html>

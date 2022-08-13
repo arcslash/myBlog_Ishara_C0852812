@@ -9,12 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./main.css" rel="stylesheet" />
+    <link href="./content.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
+    <script src="./script.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="nav-container">
       <div class="nav-left">
-        <img src="images/IU_new.png" alt="blog logo" class="logo" />
+        <!-- <img src="images/IU_new.png" alt="blog logo" class="logo" /> -->
         <a class="nav-left-margin" href="./index.html">Home</a>
         <a class="nav-left-margin" href="./portfolio.html">Portfolio</a>
         <a class="nav-left-margin" href="./contact.html">Contact</a>
@@ -27,16 +29,36 @@
         <div class="grid-container">
             <div class="grid-child purple">
                 <div class="section nav-left-margin">
-                    <h1>Hi I am Ishara</h1>
-                    <h3>I Make <div class="subhead-title">Software, Scalable Systems and Enagagable Solutions</div></h3>
+                    <h1>Lets have a chat?</h1>
+                    <div class="wrapper">
+                      <div>
+                          <input type="text" placeholder="Name"/>
+                      </div>
+                      <div>
+                          <input type="text" placeholder="Email"/>
+                      </div>
+                      <div>
+                          <textarea name="comment" cols="40" rows="5" placeholder="Comment"></textarea>
+                      </div> 
+                      <button class="button">Sends</button> 
+                  </div>
                 </div>
             </div>
             <div class="grid-child green">
-                Grid Column 2
+              <div class="center">
+                <img width="400" src="images/contact1.jpeg">
+            </div>
             </div>
 
        
     </div>
-    <footer>&copy; Copyright 2021 Ishara Abeykoon Blog</footer>
+    <footer>
+      <div class="footer-content">
+          <!--add all information -->
+          &copy; Copyright 2021 Ishara Abeykoon Blog
+      </div>
+     
+  
+  </footer>
     </body>
     </html>
