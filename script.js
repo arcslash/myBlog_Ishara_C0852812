@@ -1,5 +1,16 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+let current_blog_data = 0;
+function changeBLogView(blogViewId){
+    if(blogViewId === 2){
+        $('#sagemaker').css("display", "block");
+        $('#ussd').css("display", "none");
+    }else{
+        $('#sagemaker').css("display", "none");
+        $('#ussd').css("display", "block");
+    }
+}
+changeBLogView(1);
+
 
 // Next/previous controls
 function plusSlides(n) {
@@ -26,3 +37,13 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+
+$(document).ready(function () {
+    // Function code here.
+    console.log("Running these...")
+    changeBLogView(1);
+    showSlides(slideIndex);
+    
+});

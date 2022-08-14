@@ -33,11 +33,16 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
 }
-@media (max-width: 500px) {
+
+@media (max-width: 600px) {
     .grid-container {
         display: block;
     }
+    .nav-container .nav-right{
+        display: none;
+      }
   }
+
 .center {
     height: 500px;
     display: flex;
@@ -698,4 +703,13 @@ input[type=submit] {
 }
 input[type=submit]:hover {
   background-color: #45a049;
+}
+
+.blog-post-container {
+    margin: 10%;
+    width: fit-content;
+}
+
+.blog-post-content {
+    margin-top: 10%;
 }

@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <link href="./main.css" rel="stylesheet" />
+    <link href="./content.css" rel="stylesheet" />
 
     <script src="https://kit.fontawesome.com/61ebb60581.js" crossorigin="anonymous"></script>
     <script
@@ -32,24 +32,44 @@
         <a class="nav-center-margin" href="./blog.html">Blog</a>
         <a class="nav-right-margin" href="./contact.html">Contact</a>
           </div>
-    </div>
+        </div>
 
     <div class="main-wrapper">
 
         <div class="grid-container">
             <div class="grid-child purple">
-                <div class="section nav-left-margin">
-                    <br/>
-                    <h1>Hi, <br/> I am Ishara</h1>
-                    
-                    <br/>
-                    <h3>I Make <div class="subhead-title">Scalable, Secure and Maintainable</div> Software</h3>
+                <div class="blog-post-container" id="ussd">
+                    <div class="blog-post-header">
+                        <h3>Handling USSD for React Native</h3>
+                    </div>
+                    <div class="blog-post-content">
+                        I was in this current project recently which required functionality to to dial USSD codes to recharge/check balance as well as query telecom provider for some data, but react native doesn’t have a library by default to access ussd functions.react-native-ussd is a library to address react native based ussd calls and listeners
+
+Unfortunately I couldn’t find a way to read up USSD responses in IOS so the current solution will only be limited to android at this time.Although IOS USSD dialling functions will be added in the future releases of the react-native-ussd. (If anyone like to contribute please let me know as well :) )
+
+Basic Library use starts with adding user permissions to android manifest, which naturally need permission to make calls in order to continue
+
+<br/>
+<a href="https://arcslash.com/posts/2020-06-02-react-native-ussd/">Read More...</a>
+                    </div>
                 </div>
-                <br/>
-                <div class="description-block">
-                    <h5>
-                    Hi, I am Ishara a Backend Engineer working in tech related 
-                    to Machine Learning, Blockchain and computer security</h5></div>
+
+                <div class="blog-post-container" id="sagemaker">
+                    <div class="blog-post-header">
+                        <h3>AWS Hosting Sagemaker</h3>
+                        
+                    </div>
+                    <div class="blog-post-content">
+                        This guide may differ on different on the newest versions of sagemaker sdk and tensorflow at the time of writing the latest tensorflow version is 2.5 since only tensorflow 2.1.0 had solid support and compatability in deployments tensorflow 2.1.0 will be used in here.
+
+TL;DR:
+
+You can find the jupyter notebook related to this in here which explains step by steps to follow
+
+<br/>
+<a href="https://arcslash.com/posts/2021-08-07-aws-sagemaker/">Read More...</a>
+                    </div>
+                </div>
             </div>
            
             <div class="grid-child green">
@@ -59,42 +79,25 @@
            
             <div id="social-icons">
                 <div id="social-icons-head">
-                    <h3>Find me in:</h3>
+                    <h3>Latest Blog posts:</h3>
                 </div>
-                
-                <ul>
-                    <li><i class="fa fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/iamishara/">Facebook</a></li><li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/arcslash">Github</a></li><li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/Isharaux">Twitter</a></li>
-                </ul>
             </div>
             
             
             <table width="100%" border="1" cellspacing="0" cellpadding="10">
                 <thead>
                   
-                    <td>Area</td>
-                    <td>Exp</td>
-                    <td>Techstack</td>
+                    <td>Blog Post</td>
+                    <td>Tags</td>
                  </thead>
                  <tbody>
                     <tr>
-                        <td>Backend Developement</td>
-                        <td>4+ Years</td>
-                        <td>Django, Nodejs</td>
+                        <td><a onclick="changeBLogView(1)" href="#">Handling USSD for React Native</a></td>
+                        <td>React Native, USSD, Android</td>
                     </tr>
                     <tr>
-                        <td>Machine Learning</td>
-                        <td>4+ Years</td>
-                        <td>Tensorflow, Keras, Pytorch, Darknet</td>
-                    </tr>
-                    <tr>
-                        <td>Computer Security</td>
-                        <td>2+ Years</td>
-                        <td>Penetration Testing, Reverse Engineering, API security</td>
-                    </tr>
-                    <tr>
-                        <td>Mobile Developement</td>
-                        <td>1+ Years</td>
-                        <td>Kotlin, Swift, Flutter</td>
+                        <td><a onclick="changeBLogView(2)" href="#">AWS Hosting Sagemaker</a></td>
+                        <td>Sagemaker, AWS</td>
                     </tr>
                  </tbody> 
               </table>        

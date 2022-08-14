@@ -36,10 +36,13 @@
     grid-gap: 20px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .grid-container {
         display: block;
     }
+    .nav-container .nav-right{
+        display: none;
+      }
   }
 
 .center {
